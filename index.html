@@ -30,7 +30,6 @@
       cursor: none;
     }
 
-    /* ── Custom cursor ── */
     #cursor {
       position: fixed;
       width: 10px; height: 10px;
@@ -67,7 +66,6 @@
       background: var(--red);
     }
 
-    /* ── Fixed decorative shapes ── */
     .deco-fixed {
       position: fixed;
       pointer-events: none;
@@ -94,7 +92,6 @@
       opacity: .025;
     }
 
-    /* ── Header ── */
     header {
       position: relative;
       padding: 44px 48px 32px;
@@ -108,7 +105,6 @@
       position: relative;
       z-index: 2;
     }
-
     .logo-sub {
       font-size: 10px;
       letter-spacing: .45em;
@@ -126,7 +122,6 @@
     .c-red    { color: var(--red); }
     .c-yellow { color: var(--yellow); }
     .c-blue   { color: var(--blue); }
-
     .header-stats {
       display: flex;
       gap: 48px;
@@ -146,8 +141,6 @@
       color: rgba(241,250,238,.3);
       margin-top: 2px;
     }
-
-    /* tiny decorations in header */
     .h-deco-sq {
       position: absolute; bottom: -16px; right: 280px;
       width: 64px; height: 64px;
@@ -158,8 +151,6 @@
       width: 32px; height: 32px;
       border-radius: 50%; background: var(--blue); opacity: .1; z-index: 1;
     }
-
-    /* ── Controls ── */
     .controls {
       display: flex;
       align-items: center;
@@ -167,10 +158,7 @@
       padding: 20px 48px;
       border-bottom: 1px solid var(--g3);
     }
-    .search-wrap {
-      flex: 1;
-      position: relative;
-    }
+    .search-wrap { flex: 1; position: relative; }
     .search-label {
       position: absolute;
       top: -14px; left: 0;
@@ -199,7 +187,6 @@
       text-transform: uppercase;
     }
     .search-input:focus { border-bottom-color: var(--red); }
-
     .btn-add {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 15px;
@@ -215,8 +202,6 @@
     }
     .btn-add:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--yellow); }
     .btn-add:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--yellow); }
-
-    /* ── Grid ── */
     .grid-wrap {
       padding: 3px;
       transition: transform .35s cubic-bezier(.25,.46,.45,.94);
@@ -226,8 +211,6 @@
       grid-template-columns: repeat(12, 1fr);
       gap: 3px;
     }
-
-    /* ── Card ── */
     .card {
       position: relative;
       background: var(--g1);
@@ -257,7 +240,6 @@
       z-index: 10;
     }
     .card:hover::after { transform: scaleX(1); }
-
     .card-actions {
       position: absolute;
       top: 14px; right: 14px;
@@ -267,7 +249,6 @@
       transition: opacity .2s;
     }
     .card:hover .card-actions { opacity: 1; }
-
     .btn-act {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 11px;
@@ -280,7 +261,6 @@
     .btn-act:hover { transform: translate(-1px,-1px); }
     .btn-edit-act { background: var(--yellow); color: var(--black); box-shadow: 2px 2px 0 rgba(244,211,94,.3); }
     .btn-del-act { background: transparent; color: var(--red); border: 1px solid var(--red); box-shadow: 2px 2px 0 rgba(230,57,70,.3); }
-
     .card-num {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 10px;
@@ -333,32 +313,10 @@
       pointer-events: none;
       user-select: none;
     }
-
-    /* ── Geo shapes ── */
-    .geo-c {
-      display: inline-block;
-      border-radius: 50%;
-      background: var(--red);
-      flex-shrink: 0;
-    }
-    .geo-s {
-      display: inline-block;
-      background: var(--yellow);
-      flex-shrink: 0;
-    }
-    .geo-t {
-      display: inline-block;
-      width: 0; height: 0;
-      border-style: solid;
-      flex-shrink: 0;
-    }
-    .geo-e {
-      display: inline-block;
-      border: 1px solid rgba(241,250,238,.12);
-      flex-shrink: 0;
-    }
-
-    /* ── Empty / no-results ── */
+    .geo-c { display: inline-block; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .geo-s { display: inline-block; background: var(--yellow); flex-shrink: 0; }
+    .geo-t { display: inline-block; width: 0; height: 0; border-style: solid; flex-shrink: 0; }
+    .geo-e { display: inline-block; border: 1px solid rgba(241,250,238,.12); flex-shrink: 0; }
     .state-msg {
       grid-column: span 12;
       padding: 100px 48px;
@@ -377,8 +335,6 @@
       color: rgba(241,250,238,.18);
       margin-top: 14px;
     }
-
-    /* ── Modal ── */
     .modal-overlay {
       position: fixed; inset: 0;
       background: rgba(0,0,0,.82);
@@ -389,7 +345,6 @@
       justify-content: center;
     }
     .modal-overlay.active { display: flex; }
-
     .modal {
       background: var(--g1);
       border: 1px solid var(--g3);
@@ -404,7 +359,6 @@
       from { transform: translateY(20px); opacity: 0; }
       to   { transform: translateY(0);    opacity: 1; }
     }
-
     .modal-label {
       font-size: 9px;
       letter-spacing: .45em;
@@ -432,7 +386,6 @@
       line-height: 1;
     }
     .modal-close:hover { color: var(--white); }
-
     .form-group { margin-bottom: 28px; }
     .form-label {
       display: block;
@@ -457,13 +410,7 @@
     }
     .form-input:focus, .form-textarea:focus { border-bottom-color: var(--red); }
     .form-textarea { min-height: 110px; line-height: 1.65; }
-
-    /* Rating picker */
-    .rating-pick {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+    .rating-pick { display: flex; gap: 10px; flex-wrap: wrap; }
     .r-opt { display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; }
     .r-opt input[type="radio"] { display: none; }
     .r-preview {
@@ -487,7 +434,6 @@
       letter-spacing: .1em;
       color: rgba(241,250,238,.35);
     }
-
     .btn-submit {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 16px;
@@ -504,8 +450,6 @@
     }
     .btn-submit:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--yellow); }
     .btn-submit:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--yellow); }
-
-    /* ── Toast ── */
     #toast {
       position: fixed;
       bottom: 32px; left: 50%;
@@ -522,13 +466,10 @@
       white-space: nowrap;
     }
     #toast.show { transform: translateX(-50%) translateY(0); }
-
-    /* ── Scrollbar ── */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: var(--black); }
     ::-webkit-scrollbar-thumb { background: var(--g3); }
     ::-webkit-scrollbar-thumb:hover { background: var(--red); }
-
     @media (max-width: 700px) {
       header { padding: 28px 20px 24px; }
       .controls { padding: 16px 20px; }
@@ -540,18 +481,12 @@
   </style>
 </head>
 <body>
-
-  <!-- Mouse FX -->
   <div id="cursor"></div>
   <div id="halo"></div>
   <div id="blob"></div>
-
-  <!-- BG Decorations -->
   <div class="deco-fixed deco-circle-br"></div>
   <div class="deco-fixed deco-square-tr"></div>
   <div class="deco-fixed deco-triangle-tl"></div>
-
-  <!-- Header -->
   <header>
     <div class="h-deco-sq"></div>
     <div class="h-deco-ci"></div>
@@ -574,8 +509,6 @@
       </div>
     </div>
   </header>
-
-  <!-- Controls -->
   <div class="controls">
     <div class="search-wrap">
       <span class="search-label">Search</span>
@@ -583,13 +516,9 @@
     </div>
     <button class="btn-add" id="btn-add">＋ New Entry</button>
   </div>
-
-  <!-- Grid -->
   <div class="grid-wrap" id="grid-wrap">
     <div class="grid" id="grid"></div>
   </div>
-
-  <!-- Modal -->
   <div class="modal-overlay" id="modal-overlay">
     <div class="modal">
       <button class="modal-close" id="modal-close">✕</button>
@@ -613,16 +542,9 @@
       </form>
     </div>
   </div>
-
-  <!-- Toast -->
   <div id="toast"></div>
-
 <script>
-// ── Constants ───────────────────────────────────────────────────────────────
 const KEY = 'anime-archive-v1';
-
-// Rating → shape sequence
-// C = circle (red), S = square (yellow), T = triangle (blue)
 const SHAPES_MAP = {
   1: ['C'],
   2: ['C','S'],
@@ -630,63 +552,27 @@ const SHAPES_MAP = {
   4: ['C','C','S','S'],
   5: ['C','C','S','T','T']
 };
-
-// Grid col-span sequence (groups sum to 12)
 const COL_SEQ = [7,5, 4,4,4, 5,7, 6,6, 8,4, 12, 7,5, 4,8, 6,6];
-
-// Blob colors cycling on mouse click
 const BLOB_COLORS = ['#E63946','#F4D35E','#4895EF'];
-
-// ── State ───────────────────────────────────────────────────────────────────
 let entries = [];
 let editId   = null;
 let query    = '';
 let blobIdx  = 0;
-
-// ── Persistence ─────────────────────────────────────────────────────────────
 function load() {
   try { entries = JSON.parse(localStorage.getItem(KEY) || '[]'); }
   catch { entries = []; }
 }
 function save() { localStorage.setItem(KEY, JSON.stringify(entries)); }
 function uid()  { return Date.now().toString(36) + Math.random().toString(36).slice(2); }
-
-// ── Geometry helpers ─────────────────────────────────────────────────────────
-function shapeEl(type, sz) {
-  const el = document.createElement('span');
-  if (type === 'C') {
-    el.className = 'geo-c';
-    el.style.cssText = `width:${sz}px;height:${sz}px`;
-  } else if (type === 'S') {
-    el.className = 'geo-s';
-    el.style.cssText = `width:${sz}px;height:${sz}px`;
-  } else if (type === 'T') {
-    el.className = 'geo-t';
-    const h = sz, hw = Math.round(sz * .58);
-    el.style.cssText = `border-left:${hw}px solid transparent;border-right:${hw}px solid transparent;border-bottom:${h}px solid var(--blue)`;
-  } else {
-    el.className = 'geo-e';
-    el.style.cssText = `width:${sz}px;height:${sz}px`;
-  }
-  return el;
-}
-
-function ratingGeoHTML(rating, sz = 10) {
-  const frag = document.createDocumentFragment();
-  (SHAPES_MAP[rating] || []).forEach(t => frag.appendChild(shapeEl(t, sz)));
-  return frag;
-}
-
-function ratingGeoHTMLStr(rating, sz = 9) {
+function ratingGeoHTMLStr(rating, sz) {
+  sz = sz || 9;
   return (SHAPES_MAP[rating] || []).map(t => {
-    if (t === 'C') return `<span class="geo-c" style="width:${sz}px;height:${sz}px"></span>`;
-    if (t === 'S') return `<span class="geo-s" style="width:${sz}px;height:${sz}px"></span>`;
+    if (t === 'C') return '<span class="geo-c" style="width:'+sz+'px;height:'+sz+'px"></span>';
+    if (t === 'S') return '<span class="geo-s" style="width:'+sz+'px;height:'+sz+'px"></span>';
     const h = sz, hw = Math.round(sz * .58);
-    return `<span class="geo-t" style="border-left:${hw}px solid transparent;border-right:${hw}px solid transparent;border-bottom:${h}px solid var(--blue)"></span>`;
+    return '<span class="geo-t" style="border-left:'+hw+'px solid transparent;border-right:'+hw+'px solid transparent;border-bottom:'+h+'px solid var(--blue)"></span>';
   }).join('');
 }
-
-// ── Stats ────────────────────────────────────────────────────────────────────
 function updateStats() {
   document.getElementById('stat-count').textContent = String(entries.length).padStart(2,'0');
   if (!entries.length) {
@@ -696,88 +582,51 @@ function updateStats() {
     document.getElementById('stat-avg').textContent = avg.toFixed(1);
   }
 }
-
-// ── Render ───────────────────────────────────────────────────────────────────
 function esc(s) {
   const d = document.createElement('div');
   d.textContent = s;
   return d.innerHTML;
 }
-
-function getColSpan(idx) {
-  return COL_SEQ[idx % COL_SEQ.length];
-}
-
+function getColSpan(idx) { return COL_SEQ[idx % COL_SEQ.length]; }
 function render() {
   updateStats();
   const grid = document.getElementById('grid');
-
   const q = query.toLowerCase();
   const filtered = entries.filter(e =>
     !q || e.title.toLowerCase().includes(q) || (e.review||'').toLowerCase().includes(q)
   );
-
   if (!filtered.length) {
-    grid.innerHTML = `
-      <div class="state-msg">
-        <div class="state-big">${entries.length ? 'NO MATCHES' : 'NO ENTRIES YET'}</div>
-        <div class="state-small">${entries.length ? 'Try a different search term' : 'Click "New Entry" to start your archive'}</div>
-      </div>`;
+    grid.innerHTML = '<div class="state-msg"><div class="state-big">'+(entries.length ? 'NO MATCHES' : 'NO ENTRIES YET')+'</div><div class="state-small">'+(entries.length ? 'Try a different search term' : 'Click \'New Entry\' to start your archive')+'</div></div>';
     return;
   }
-
   grid.innerHTML = filtered.map((entry, i) => {
     const globalIdx = entries.indexOf(entry);
     const num = String(globalIdx + 1).padStart(2,'0');
     const col = getColSpan(i);
-    return `
-      <div class="card" data-id="${entry.id}" style="grid-column:span ${col}">
-        <div class="card-actions">
-          <button class="btn-act btn-edit-act" data-id="${entry.id}">Edit</button>
-          <button class="btn-act btn-del-act"  data-id="${entry.id}">Del</button>
-        </div>
-        <div class="card-num">${num}</div>
-        <div class="card-title">${esc(entry.title)}</div>
-        <div class="rating-geo">
-          ${ratingGeoHTMLStr(entry.rating, 10)}
-          <span class="rating-score">${entry.rating} / 5</span>
-        </div>
-        <div class="card-review">${esc(entry.review || '')}</div>
-        <div class="card-bg-num">${entry.rating}</div>
-      </div>`;
+    return '<div class="card" data-id="'+entry.id+'" style="grid-column:span '+col+'"><div class="card-actions"><button class="btn-act btn-edit-act" data-id="'+entry.id+'">Edit</button><button class="btn-act btn-del-act" data-id="'+entry.id+'">Del</button></div><div class="card-num">'+num+'</div><div class="card-title">'+esc(entry.title)+'</div><div class="rating-geo">'+ratingGeoHTMLStr(entry.rating, 10)+'<span class="rating-score">'+entry.rating+' / 5</span></div><div class="card-review">'+esc(entry.review || '')+'</div><div class="card-bg-num">'+entry.rating+'</div></div>';
   }).join('');
-
-  // Events
   grid.querySelectorAll('.btn-edit-act').forEach(b => {
     b.addEventListener('click', e => { e.stopPropagation(); openEdit(b.dataset.id); });
   });
   grid.querySelectorAll('.btn-del-act').forEach(b => {
     b.addEventListener('click', e => { e.stopPropagation(); deleteEntry(b.dataset.id); });
   });
-
-  // Hover → grid shift
   const wrap = document.getElementById('grid-wrap');
   grid.querySelectorAll('.card').forEach(c => {
     c.addEventListener('mouseenter', () => { wrap.style.transform = 'translate(2px,-1.5px)'; });
     c.addEventListener('mouseleave', () => { wrap.style.transform = ''; });
   });
 }
-
-// ── CRUD ─────────────────────────────────────────────────────────────────────
 function deleteEntry(id) {
   entries = entries.filter(e => e.id !== id);
-  save();
-  render();
+  save(); render();
   toast('Entry removed from archive');
 }
-
-// ── Modal ─────────────────────────────────────────────────────────────────────
 function openModal(isEdit) {
   document.getElementById('modal-label').textContent   = isEdit ? 'Editing' : 'New Entry';
   document.getElementById('modal-heading').textContent = isEdit ? 'Update Entry' : 'Add to Archive';
   document.getElementById('modal-overlay').classList.add('active');
 }
-
 function closeModal() {
   document.getElementById('modal-overlay').classList.remove('active');
   document.getElementById('entry-form').reset();
@@ -785,7 +634,6 @@ function closeModal() {
   editId = null;
   setRating(3);
 }
-
 function openEdit(id) {
   const e = entries.find(x => x.id === id);
   if (!e) return;
@@ -796,36 +644,25 @@ function openEdit(id) {
   openModal(true);
   setRating(e.rating);
 }
-
 function setRating(n) {
-  const inp = document.querySelector(`#rating-pick input[value="${n}"]`);
+  const inp = document.querySelector('#rating-pick input[value="'+n+'"]');
   if (inp) inp.checked = true;
 }
-
-// ── Rating picker builder ────────────────────────────────────────────────────
 function buildRatingPicker() {
   const container = document.getElementById('rating-pick');
-  container.innerHTML = [1,2,3,4,5].map(n => `
-    <label class="r-opt">
-      <input type="radio" name="rating" value="${n}" ${n===3?'checked':''}>
-      <div class="r-preview">${ratingGeoHTMLStr(n, 8)}</div>
-      <span class="r-val">${n}</span>
-    </label>`).join('');
+  container.innerHTML = [1,2,3,4,5].map(n =>
+    '<label class="r-opt"><input type="radio" name="rating" value="'+n+'" '+(n===3?'checked':'')+'>'
+    +'<div class="r-preview">'+ratingGeoHTMLStr(n, 8)+'</div>'
+    +'<span class="r-val">'+n+'</span></label>'
+  ).join('');
 }
-
-// ── Form submit ───────────────────────────────────────────────────────────────
 document.getElementById('entry-form').addEventListener('submit', ev => {
   ev.preventDefault();
   const title  = document.getElementById('f-title').value.trim();
   const review = document.getElementById('f-review').value.trim();
   const rInp   = document.querySelector('#rating-pick input[name="rating"]:checked');
   const rating = rInp ? parseInt(rInp.value) : 3;
-
-  if (!title) {
-    document.getElementById('f-title').focus();
-    return;
-  }
-
+  if (!title) { document.getElementById('f-title').focus(); return; }
   if (editId) {
     const idx = entries.findIndex(e => e.id === editId);
     if (idx !== -1) entries[idx] = { ...entries[idx], title, review, rating };
@@ -834,12 +671,8 @@ document.getElementById('entry-form').addEventListener('submit', ev => {
     entries.unshift({ id: uid(), title, review, rating, date: new Date().toISOString() });
     toast('Entry added to archive');
   }
-  save();
-  render();
-  closeModal();
+  save(); render(); closeModal();
 });
-
-// ── Toast ─────────────────────────────────────────────────────────────────────
 let toastTimer;
 function toast(msg) {
   const el = document.getElementById('toast');
@@ -848,12 +681,9 @@ function toast(msg) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => el.classList.remove('show'), 2600);
 }
-
-// ── Mouse FX ──────────────────────────────────────────────────────────────────
 const cursor = document.getElementById('cursor');
 const halo   = document.getElementById('halo');
 const blob   = document.getElementById('blob');
-
 document.addEventListener('mousemove', ev => {
   cursor.style.left = ev.clientX + 'px';
   cursor.style.top  = ev.clientY + 'px';
@@ -862,18 +692,14 @@ document.addEventListener('mousemove', ev => {
   blob.style.left   = ev.clientX + 'px';
   blob.style.top    = ev.clientY + 'px';
 });
-
 document.addEventListener('click', () => {
   blobIdx = (blobIdx + 1) % BLOB_COLORS.length;
   blob.style.background = BLOB_COLORS[blobIdx];
 });
-
 document.addEventListener('mouseover', ev => {
   const big = ev.target.matches('button,input,textarea,label,a,.card,.r-opt');
   cursor.classList.toggle('big', big);
 });
-
-// ── Event listeners ───────────────────────────────────────────────────────────
 document.getElementById('btn-add').addEventListener('click', () => {
   editId = null;
   document.getElementById('entry-form').reset();
@@ -881,23 +707,17 @@ document.getElementById('btn-add').addEventListener('click', () => {
   setRating(3);
   openModal(false);
 });
-
 document.getElementById('modal-close').addEventListener('click', closeModal);
-
 document.getElementById('modal-overlay').addEventListener('click', ev => {
   if (ev.target === document.getElementById('modal-overlay')) closeModal();
 });
-
 document.getElementById('search-input').addEventListener('input', ev => {
   query = ev.target.value;
   render();
 });
-
 document.addEventListener('keydown', ev => {
   if (ev.key === 'Escape') closeModal();
 });
-
-// ── Init ──────────────────────────────────────────────────────────────────────
 load();
 buildRatingPicker();
 render();
